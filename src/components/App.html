@@ -1,5 +1,5 @@
-<main>
-	<div class="container">
+<main class="app-main">
+	<div class="app-container">
 		<div class="app-title">
 			{ title }
 		</div>
@@ -7,7 +7,7 @@
 </main>
 
 <style>
-	main {
+	.app-main {
 		background: #fafafa;
 		position: fixed;
 		width: 100%;
@@ -16,10 +16,11 @@
 		left: 0;
 		right: 0;
 		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   	font-weight: 300;
+		 font-weight: 300;
+		 z-index: 100000;
 	}
 
-	.container {
+	.app-container {
 		background: #fff;
 		padding: 16px;
 		margin: 16px auto;
