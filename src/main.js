@@ -1,9 +1,9 @@
-import App from './App.html';
+import App from './components/App.html';
 
 const app = new App({
-	target: document.getElementById('app-container'),
+	target: document.getElementById('svelte-container'),
 	data: {
-		name: 'Sergey'
+		title: 'Search widget'
 	}
 });
 
