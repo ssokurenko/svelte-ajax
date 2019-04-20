@@ -19,6 +19,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "serve": "webpack-dev-server --content-base public",
-    "start": "npm run build && npm run serve"
+    "start": "npm run serve",
+    "deploy": "npm run build && surge ./public svelte-ajax.surge.sh"
   }
 }

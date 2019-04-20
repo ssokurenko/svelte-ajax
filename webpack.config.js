@@ -34,13 +34,17 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [
-					'style-loader',
+					prod ? MiniCssExtractPlugin.loader : 'style-loader',
 					'css-loader'
 				]
 			}
 		]
 	},
 	mode,
-	plugins: [],
+	plugins: [
+		new MiniCssExtractPlugin({
+			filename: '[name].css'
+		})
+	],
 	devtool: false
 };
