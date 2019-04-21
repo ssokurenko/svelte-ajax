@@ -1,4 +1,4 @@
-<main class="app-main">
+<main class="app-main app-theme">
 	<div class="app-container">
 		<div class="app-title">
 			{ title }
@@ -9,6 +9,7 @@
 <style>
 	.app-main {
 		background: #fafafa;
+		color: #000;
 		position: fixed;
 		width: 100%;
 		height: 100%;
@@ -32,6 +33,5 @@
 
 	.app-title {
 		font-size: 2rem;
-		color: #000;
 	}
 </style>
