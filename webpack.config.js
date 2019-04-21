@@ -37,7 +37,12 @@ module.exports = {
 					prod ? MiniCssExtractPlugin.loader : 'style-loader',
 					'css-loader'
 				]
-			}
+			},
+      {
+        test: /\.svelte$/,
+        exclude: /node_modules/,
+        use: 'svelte-loader'
+      }
 		]
 	},
 	mode,

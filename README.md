@@ -22,7 +22,5 @@ The local dev server will be available at [http://localhost:8080/](http://localh
 Or add the followng code to your .html page:
 
 ```
-<link rel="stylesheet" href="https://svelte-ajax.surge.sh/app.css">
-<script src='https://svelte-ajax.surge.sh/app.js' defer></script>
+<script src='//svelte-ajax.surge.sh/app-bootstrap.js' defer></script>
 ```
-
