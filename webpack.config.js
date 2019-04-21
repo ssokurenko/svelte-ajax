@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
@@ -42,6 +43,11 @@ module.exports = {
         test: /\.svelte$/,
         exclude: /node_modules/,
         use: 'svelte-loader'
+      },
+      {
+        test: /\.hbs$/,
+        exclude: /node_modules/,
+        use: 'handlebars-loader'
       }
 		]
 	},
@@ -49,7 +55,13 @@ module.exports = {
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: '[name].css'
-		})
+		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			isDevelopment: mode === 'development',
+			isProduction: mode === 'production',
+      template: './src/index.hbs'
+    })
 	],
 	devtool: false
 };
