@@ -8,7 +8,7 @@ On the front-end is used the [Svelte](https://svelte.dev/), a light weight frame
 
 For the back-end API calls is used [AltoShift](https://altoshift.com/), search engine for modern business.
 
-![AltoShift logo](https://altoshift.com/img/icons/Logo_colored.svg)
+![AltoShift logo](https://cl.ly/7b40d71e61f6/download/Logo_colored.svg)
 
 ## Setup 
 
