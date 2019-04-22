@@ -1,5 +1,15 @@
 # Svelte AJAX demo app
 
+## Technologies
+
+On the front-end is used the [Svelte](https://svelte.dev/), a light weight framework.
+
+![Svelte logo](https://svelte.dev/svelte-logo-horizontal.svg)
+
+For the back-end API calls is used [AltoShift](https://altoshift.com/), search engine for modern business.
+
+![Svelte logo](https://altoshift.com/img/icons/Logo_colored.svg)
+
 ## Setup 
 
 Install dependencies:

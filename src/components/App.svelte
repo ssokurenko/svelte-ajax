@@ -12,7 +12,13 @@
 			</button>
 		</div>
 		{#if response}
-			<Results data={{response}} />
+			{#if response.products}
+				<Results data={{response}} />
+			{:else}
+				<p>
+					No results. Please try another search query.
+				</p>
+			{/if}
 		{/if}
 	</div>
 	
@@ -23,7 +29,8 @@
 import Results from './Results.svelte';
 
 const fetchResults = async (data, component, query) => {
-  const r = await fetch(`https://api.altoshift.com/v1/search?query=${query}&token=5c4597b15608d4002e09d979-1548064689054-26650276`);
+	const token = '5cbd9ef4733fac0032d53b01-1555930868688-31732973';
+  const r = await fetch(`https://api.altoshift.com/v1/search?query=${query}&token=${token}`);
 	const json = await r.json();
   const response = json;
   component.set({ response });

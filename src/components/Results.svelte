@@ -4,10 +4,6 @@
   <div class="app-products">
     {#each data.response.products as product}
       <Product data={{product}} />
-    {:else}
-      <p>
-        Please try another search query.
-      </p>
     {/each}
   </div>
 </div>
